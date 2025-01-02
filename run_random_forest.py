@@ -55,7 +55,7 @@ print('Trained model will be saved in {}'.format(outfname))
 # Build Random Forest Model
 rf = RandomForestRegressor(max_depth=max_depth,
                            n_estimators=n_estimators,
-                           n_jobs=n_jobs)
+                           n_jobs=n_jobs, verbose=2)
 print(rf)
 
 sample_dir = '{}_train_test_data'.format(outprefix)
